@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center">Book your tickets online</h1>
+    <form>
+        <div>
+    Name:<input type="text" name="fname" required><br>
+        </div>
+        <div>
+    Date Of Booking:<input type="date" name="ddate" required><br>
+        </div>
+        <div>
+    Movie:<select name="movies" required>
+        <option value="SLN">SLN</option>
+        <option value="ALVP">ALVP</option>
+        <option value="Frozen2">Frozen2</option>
+    </select>
+    </div>
+    <div>
+    Show timings: <select type="timings" required>
+        <option value="Morningshow">Morningshow</option>
+        <option value="Matniee">Matniee</option>
+        <option value="Eveningshow">Eveningshow</option>
+        <option value="Nightshow">Nightshow</option>
+    </select>
+    </div>
+    <div>
+    <br>Class:<br>
+    <input type="radio" name="class" value="platinum" required>platinum
+          <input type="radio" name="class" value="gold">Gold
+          <input type="radio" name="class" value="exclusive">exclusive
+          </div>
+    Price :<input type="text" name="Price" disabled><br>
+    Total price :<input type="text" name="Total price" disabled><br>
+    Submit :<input type="submit" name="submit"><br>
+    Reset :<input type="reset" name="reset"><br>
+    </form>
+</body>
+</html>
