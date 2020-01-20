@@ -88,7 +88,7 @@
         <!--#####################START HERE######################-->
 
         <!-- TABLE -->
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>#</th>
@@ -122,7 +122,7 @@
         <br>
 
         <!-- INVERSE/DARK TABLE -->
-        <table>
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th>#</th>
@@ -156,7 +156,7 @@
         <br>
 
         <!-- TABLE HEAD INVERSE -->
-        <table>
+        <table class="table table-inverse">
             <thead>
                 <tr>
                     <th>#</th>
@@ -190,7 +190,7 @@
         <br>
 
         <!-- STRIPED TABLE -->
-        <table>
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>#</th>
@@ -219,10 +219,10 @@
                     <td>shannon@yahoo.com</td>
                 </tr>
             </tbody>
-        </table>
+        </table c>
 
         <!-- BORDERED TABLE -->
-        <table>
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>#</th>
@@ -256,7 +256,7 @@
         <br>
 
         <!-- BORDERLESS TABLE -->
-        <table>
+        <table class="table table-borderless">
             <thead>
                 <tr>
                     <th>#</th>
@@ -290,7 +290,7 @@
         <br>
 
         <!-- HOVERABLE -->
-        <table>
+        <table class="table table-hover">
             <thead>
                 <tr>
                     <th>#</th>
@@ -324,9 +324,9 @@
         <br>
 
         <!-- CONTEXTUAL CLASSES -->
-        <table>
+        <table class="table">
             <thead>
-                <tr>
+                <tr class="table-primary">
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -334,19 +334,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="table-warning">
                     <th scope="row">1</th>
                     <td>John</td>
                     <td>Doe</td>
                     <td>jdoe@gmail.com</td>
                 </tr>
-                <tr>
+                <tr class="table-secondary">
                     <th scope="row">2</th>
                     <td>Will</td>
                     <td>Johnson</td>
                     <td>will@yahoo.com</td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <th scope="row">3</th>
                     <td>Shannon</td>
                     <td>Williams</td>
@@ -358,7 +358,7 @@
         <br>
 
         <!-- SMALL TABLE -->
-        <table>
+        <table class="table table-sm">
             <thead>
                 <tr>
                     <th>#</th>
@@ -392,8 +392,8 @@
         <br>
 
         <!-- RESPONSIVE TABLE - Scrollbars -->
-        <div>
-            <table>
+        <div class="table-responsive">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -429,39 +429,130 @@
         <br>
 
         <!-- PAGINATION -->
-        <nav>
-            <ul>
-                <li>
+        <nav aria-label="page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
                     <a href="#">Previous</a>
                 </li>
-                <li>
+                <li class="page-item active">
                     <a href="#">1</a>
                 </li>
-                <li>
+                <li class="page-item">
                     <a href="#">2</a>
                 </li>
-                <li>
+                <li class="page-item">
                     <a href="#">3</a>
                 </li>
-                <li>
+                <li class="page-item">
                     <a href="#">Next</a>
                 </li>
             </ul>
         </nav>
 
         <!-- PAGINATION CENTERED -->
-
-
+        <nav aria-label="page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
         <!-- PAGINATION RIGHT -->
+        <nav aria-label="page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item">
+                    <a href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
 
 
         <!-- PAGINATION LARGE -->
-
+        <nav>
+            <ul class="pagination pagination-lg">
+                <li class="page-item">
+                    <a href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- PAGINATION SMALL -->
-
+        <nav aria-label="page navigation example">
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- WITH ARROWS -->
+        <nav aria-label="page navigation example">
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
 
 
     </div>
