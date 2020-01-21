@@ -1,4 +1,4 @@
-var a1=new Array(4)
+var a1=new Array(5)
 for(var i=0;i<a1.length;i++)
 {
     a1[i]=i*2;
@@ -8,5 +8,10 @@ var str='Anu'
 console.log('The string in uppercase is :'+str.toUpperCase())
 console.log('The string in locale uppercase is :'+str.toLocaleUpperCase());
 var a1=new Array(1,2,3,4)
-b1=a1.reverse()
-console.log('The reverse of an array is '+b1);
+//b1=a1.reverse()
+//console.log('The reverse of an array is '+b1);
+var b11=a1.entries()
+console.log(b11.next().value);
+console.log(b11.next().value)
+console.log(b11.next().value)
+console.log(b11.next().value)
