@@ -8,24 +8,69 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Home</title>
+    <style>
+        .center {
+          padding: 70px 0;
+          border: white;
+          text-align: center;
+        }
+        .topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+body{
+  background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 1600px 800px;
+  background-repeat: no-repeat;
+}
+.navbar {
+  overflow: hidden;
+  background-color: darkgrey;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:cadetblue;
+}
+</style>
+        </style>
 </head>
 <body>
-  <div class="container" style="margin-bottom:0">
-    <h1 style="text-align:center"><b>STOCKERS</b></h1>
-    <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="200px" height="100px">
-</div>
-<form>
-    <h4>Please select the following to continue</h4>
-    <div action="/action_page.php" >
-    <div class="radio">
-      <label><input type="radio" a href="#" name="optradio" checked>Admin</label>
+  <div class="container">
+    <h1 style="text-align:center ; color:thistle;"><b>STOCKERS</b></h1>
+    <div class="topleft">
+    <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="100px" height="100px">
     </div>
-    <div class="radio">
-      <label><input type="radio" a href="#" name="optradio">User</label>
-    </div>
-    
-  </form>
   </div>
-      
+  <br>
+  <br>
+  <br>
+  <br>
+<form>
+  <div class="center">
+    <h2 style="font-family:Arial ; color: teal; ">Welcome to the family of STOCKERS</h2>
+    <br>
+    <br>
+    <br>
+    <div action="/action_page.php" >
+      <div class="navbar">
+        <a href="adminlogin.html">Login</a>
+        <a href="aboutus.html">About us</a>
+        <a href="contactus.html">Contact us</a>
+        </div> 
+    
+    </div>
+    </div>
+</form>
+  
 </body>
 </html>

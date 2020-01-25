@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    body{
+  background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 1600px 800px;
+  background-repeat: no-repeat;
+}
+    </style>
+    <title>Manage new companies</title>
 </head>
 <body>
-    <div class="container" style="margin-bottom:0">
-        <h1 style="text-align:center"><b>STOCKERS</b></h1>
-        <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="200px" height="100px">
-    </div>
-    <form>
-        <div>
-            <div>
-                <label for="cname">Company Name</label>
-                <input type="text" placeholder="Companyname">
+        <div class="container">
+                <h1 style="text-align:center ; color:white;"><b>STOCKERS</b></h1>
+    <div class="topleft">
+    <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="100px" height="100px">
+    <br>
+    <br>
+    <form action="/action_page.php">
+        <div class="container">
+            <div class="left" > 
+            <div class="form-group" style="color:white;">
+                    <label for="name">Company Name</label>
+                    <input type="text" class="form-control" id="cname" placeholder="Enter Company name" name="cname">
+             </div>
+             
+             <div class="custom-control">
+
+             <p style="color: white;font-weight: bold">Select the stock exchange</p>
+             <select name="cars" class="form-control">
+                <option selected>Stock Exchange</option>
+                <option value="nse">NSE</option>
+                <option value="bse">BSE</option>
+                <option value="others">Others</option>
+              </select>
+              </div>
+              <br>
+             <div class="form-group" style="color:white;">
+                <label for="name">IPO</label>
+                <input type="text" class="form-control" id="ipo" placeholder="IPO" name="ipo">
             </div>
-            <div>
-                <label for="ceoname">Name of the CEO</label>
-                <input type="text" placeholder="ceoname">
+            <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-              Stock exchange
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" >Link 1</a>
-              <a class="dropdown-item" >Link 2</a>
-              <a class="dropdown-item" >Link 3</a>
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-          <button type="reset" class="btn btn-primary">Reset</button>
-    </form>
-</body>
-</html>
+    </body>

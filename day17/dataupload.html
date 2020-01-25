@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+  background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 1600px 800px;
+  background-repeat: no-repeat;
+}
+    </style>
     <title>Data Upload</title>
 </head>
 <body>
-        <div class="container" style="margin-bottom:0">
-                <h1 style="text-align:center"><b>STOCKERS</b></h1>
-                <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="200px" height="100px">
+        <div class="container">
+                <h1 style="text-align:center ; color: white"><b>STOCKERS</b></h1>
+                <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="100px" height="100px">
             </div>
-    <form class="form-inline" action="/action_page.php">
-        <div class="form-group">
+            <br>
+            <br>
+            <br>
+    <form action="/action_page.php">
+        <div class="form-group" style="color: white">
           <label for="files">Select file:</label>
-          <input type="files" class="form-control" id="files">
+          <input type="files" class="form-control" id="files" placeholder="Enter first name" name="fname">
         </div>
-
+<br>
+<br>
         <div class="container">
             <a href="#" class="btn btn-info" role="button">Browse</a>
   <button type="button" class="btn btn-info">submit</button>
