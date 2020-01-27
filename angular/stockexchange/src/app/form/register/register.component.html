@@ -1,42 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-    <title>User signup</title>
-</head>
-<body>
+
     <div class="container" style="margin-bottom:0">
-        <h1 style="text-align:center ; color:white;"><b>STOCKERS</b></h1>
-        <img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="100px" height="100px">
-        <hr>
         <form [formGroup]="registerForm" novalidate class="form"  (ngSubmit)="submit()">
-            <div class="form-group">
-              <input type="number" formControlName="id" placeholder="enter name" name="id" class="form-control" id="id">
+            <div class="form-group" style="color: white;">
+              <label for="name">Name</label>
+              <input type="text" formControlName="id" placeholder="enter name" name="id" class="form-control" id="id">
             </div>
-            <div class="form-group">
-              <input type="password" formControlName="password" placeholder="Enter password" name="password" class="form-control" id="password">
-            </div>
+           
          
-            <div class="form-group">
+            <div class="form-group" style="color: white;">
+              <label for="email">Email</label>
               <input type="email" email="true" formControlName="empEmailId" placeholder="email" name="empEmailId" class="form-control" id="empEmailId">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="color: white;">
+              <label for="phoneno">Phone number</label>
+              <input type="number" formControlName="id" placeholder="enter number" name="id" class="form-control" id="id">
+            </div>
+            <div class="form-group" style="color: white;">
+              <label for="password">Password</label>
               <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="color: white;">
+              <label for="confirmpassword">Confirm password</label>
               <input type="cpassword" formControlName="password" placeholder="confirmpassword" name="cpassword" class="form-control" id="password">
             </div>  
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-success">Submit</button>
         </form> 
-    
-    
-    
-    </div>
-</body>
-</html>
+       </div>

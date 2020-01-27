@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 1600px 800px;
+  background-repeat: no-repeat;
+}
+.navbar {
+  overflow: hidden;
+  background-color: darkgrey;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:cadetblue;
+}
+</style>
+<title>Comparing companies and sectors</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center ; color:white;"><b>STOCKERS</b></h1>
+<div class="topleft">
+<img src="https://image.shutterstock.com/image-vector/fun-people-healthy-life-logo-260nw-560428081.jpg"  width="100px" height="100px">
+</div>
+<br>
+<br>
+<br>
+<div class="navbar">
+  <a href="#news">Compare company</a>
+  <a href="#news">Compare sector</a>
+  <a href="#news">IPO's</a>
+  </div> 
+</div>
+<br>
+<br>
+<form action="action/page.php">
+    <div class="container">
+        <div class="left" > 
+        <div class="form-group" style="color:white;">
+                <label for="name">Company Name</label>
+                <input type="text" class="form-control" id="cname" placeholder="Enter Company name" name="cname">
+         </div>
+  <div class="custom-control justify-content-center row">
+
+    <p style="color: white;font-weight: bold">Select the company to compare</p>
+    <select name="cars" class="form-control">
+       <option selected>company</option>
+       <option value="c1">company1</option>
+       <option value="c2">company2</option>
+       <option value="c3">company3</option>
+     </select>
+     </div>
+     <div class="custom-control justify-content-center row">
+
+        <p style="color: white;font-weight: bold">Select the sector to compare</p>
+        <select name="cars" class="form-control">
+           <option selected>Sector</option>
+           <option value="s1">sector1</option>
+           <option value="s2">sector2</option>
+           <option value="s3">sector3</option>
+         </select>
+         </div>
+         <br>
+         <br>
+         <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</body>
+</html>
