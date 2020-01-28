@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,13 +10,10 @@ import { UserService } from 'src/app/services/user.service';
 export class HomeComponent implements OnInit {
 
   constructor(private userService :UserService) { }
-  today: any;
-  getDate(){
-    this.today=this.userService.getTodayDate();
-  }
-
+  
+  
   ngOnInit() {
-    this.getDate();
+
   }
 
 }

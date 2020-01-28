@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": "Anu",
+      "email": "anu123@gmail.com",
+      "phone": 123456789
+    },
+    {
+      "id": 102,
+      "name": "Abdus",
+      "email": "abdus123@gmail.com",
+      "phone": 123456789
+    },
+    {
+      "id": 103,
+      "name": "shriya",
+      "email": "shriya@gmail.com",
+      "phone": 126754321
+    },
+    {
+      "id": 6543,
+      "name": "abdus",
+      "email": "abdus@gmail.com",
+      "phone": 1234567890
+    },
+    {
+      "id": 2376,
+      "name": "sadika",
+      "email": "gsp@gmail.com",
+      "phone": 67895328
+    },
+    {
+      "id": 321,
+      "name": "soumya",
+      "email": "soumya@gmail.com",
+      "phone": 54327864
+    }
+  ]
+}

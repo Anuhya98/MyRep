@@ -7,15 +7,17 @@ import {FormGroup,FormControl} from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-signupForm: FormGroup;
+registerForm: FormGroup;
 submit()
 {
-  console.log(this.signupForm);
+  console.log(this.registerForm.value);
 }
   constructor() { }
 
   ngOnInit() {
-    this.signupForm=new FormGroup({
+    this.registerForm=new FormGroup({
+      'empEmailId':new FormControl(null),
+      'phoneno':new FormControl(null),
       'username':new FormControl(null),
       'password':new FormControl(null),
       'confirmpassword':new FormControl(null)
