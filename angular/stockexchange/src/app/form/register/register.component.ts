@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormControl} from '@angular/forms';
+import {FormGroup,FormControl, FormBuilder, Validators} from '@angular/forms';
+import { UserService } from 'src/app/user.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -12,15 +13,14 @@ submit()
 {
   console.log(this.registerForm.value);
 }
-  constructor() { }
+  constructor(private userService:UserService,private formBuilder:FormBuilder) { }
 
   ngOnInit() {
-    this.registerForm=new FormGroup({
-      'empEmailId':new FormControl(null),
-      'phoneno':new FormControl(null),
-      'username':new FormControl(null),
-      'password':new FormControl(null),
-      'confirmpassword':new FormControl(null)
+    this.registerForm=this.formBuilder.group({
+      username:['',Validators.required],
+      id:[''],
+      empEmailId:['',[Validators.required,Validators.email]],
+      phoneno:['',Validators.required]
     })
   }
 

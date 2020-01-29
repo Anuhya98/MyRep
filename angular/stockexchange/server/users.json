@@ -1,0 +1,28 @@
+{
+    "users":[
+        {
+            "id":101,
+            "username":"Anu",
+            "empEmailId":"anu66@gmail.com",
+            "phoneno":76543
+        },
+        {
+            "id":102,
+            "username":"Sadika",
+            "empEmailId":"gsp66@gmail.com",
+            "phoneno":87426
+        },
+        {
+            "id":103,
+            "username":"Abdus",
+            "empEmailId":"abdus99@gmail.com",
+            "phoneno":89654
+        },
+        {
+            "id":104,
+            "username":"Aneena",
+            "empEmailId":"anena@gmail.com",
+            "phoneno":79054
+        }
+    ]
+}

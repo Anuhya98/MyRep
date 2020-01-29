@@ -8,6 +8,7 @@ import { UsersComponent } from './user/users/users.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {RegisterComponent} from './user/register/register.component';
+import { UpdateUserComponent } from './user/update-user/update-user.component';
 
 @NgModule({
   imports: [ BrowserModule ,AppRoutingModule, HttpClientModule,ReactiveFormsModule],
@@ -16,7 +17,8 @@ import {RegisterComponent} from './user/register/register.component';
     HighlightDirective,
     HomeComponent,
     RegisterComponent,
-    UsersComponent
+    UsersComponent,
+    UpdateUserComponent
   ],
   providers:[],
   bootstrap: [ AppComponent ]
