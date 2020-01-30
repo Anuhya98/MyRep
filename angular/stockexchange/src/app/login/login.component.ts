@@ -15,7 +15,7 @@ submit()
 
   ngOnInit() {
     this.loginForm=new FormGroup({
-      'empEmailId':new FormControl(null),
+      'email':new FormControl(null),
       'password':new FormControl(null)
     })
   }
