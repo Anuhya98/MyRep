@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import { HomeComponent } from './home/home.component';
+import { NewcompanyComponent } from './newcompany/newcompany.component';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 
 @NgModule({
@@ -16,12 +18,14 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
     LoginComponent,
     UsersComponent,
-    HomeComponent
+    HomeComponent,
+    NewcompanyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
