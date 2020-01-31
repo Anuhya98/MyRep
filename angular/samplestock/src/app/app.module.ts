@@ -9,6 +9,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {RegisterComponent} from './user/register/register.component';
 import { UpdateUserComponent } from './user/update-user/update-user.component';
+import { PipeComponent } from './pipes/pipe/pipe.component';
+import { CustompipePipe } from './custompipe.pipe';
 
 @NgModule({
   imports: [ BrowserModule ,AppRoutingModule, HttpClientModule,ReactiveFormsModule],
@@ -18,7 +20,9 @@ import { UpdateUserComponent } from './user/update-user/update-user.component';
     HomeComponent,
     RegisterComponent,
     UsersComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
+    PipeComponent,
+    CustompipePipe
   ],
   providers:[],
   bootstrap: [ AppComponent ]
