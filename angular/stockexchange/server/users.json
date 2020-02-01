@@ -27,10 +27,18 @@
     {
       "id": 104,
       "username": "Aneena",
-      "email": "anena@gmail.com",
-      "phoneno": 79054,
-      "password": "aneena",
-      "confirmpassword": "aneena"
+      "email": "aneena@gmail.com",
+      "phoneno": 79056,
+      "password": "",
+      "confirmpassword": ""
+    },
+    {
+      "id": 123,
+      "username": "sanju",
+      "email": "san@hotmail",
+      "phoneno": 98765,
+      "password": "0123",
+      "confirmpassword": "0123"
     }
   ]
 }

@@ -10,6 +10,7 @@ import { UsersComponent } from './users/users.component';
 import { HomeComponent } from './home/home.component';
 import { NewcompanyComponent } from './newcompany/newcompany.component';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     LoginComponent,
     UsersComponent,
     HomeComponent,
-    NewcompanyComponent
+    NewcompanyComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,

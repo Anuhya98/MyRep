@@ -18,7 +18,7 @@ submit()
   ngOnInit() {
     this.registerForm=this.formBuilder.group({
       username:['',Validators.required],
-      id:[''],
+      id:['',Validators.required],
       email:['',[Validators.required,Validators.email]],
       phoneno:['',Validators.required],
       password:['',Validators.required],
