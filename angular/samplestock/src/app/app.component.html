@@ -9,4 +9,11 @@
 <a routerLink="users">User List</a>
 <a routerLink="register">Register</a>
 <a routerLink="pipes">Pipes</a>
+
+<div *ngIf="isAdmin">
+  <app-users></app-users>
+</div>
+<div *ngIf="!isAdmin">
+  <router-outlet></router-outlet>
+</div>
 <router-outlet></router-outlet>

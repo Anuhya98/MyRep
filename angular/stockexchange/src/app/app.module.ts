@@ -11,6 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { NewcompanyComponent } from './newcompany/newcompany.component';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { UpdateUserComponent } from './update-user/update-user.component';
+import { IpoComponent } from './ipo/ipo.component';
+import { StockpriceComponent } from './stockprice/stockprice.component';
+import { ImportdataComponent } from './importdata/importdata.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     UsersComponent,
     HomeComponent,
     NewcompanyComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
+    IpoComponent,
+    StockpriceComponent,
+    ImportdataComponent
   ],
   imports: [
     BrowserModule,
