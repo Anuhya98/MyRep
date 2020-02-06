@@ -17,9 +17,10 @@ ipoForm:FormGroup;
     this.ipoForm=this.formBuilder.group({
       companyid:['',Validators.required],
       companyname:['',Validators.required],
+      stockexchange:['',Validators.required],
       pricepershare:['',Validators.required],
-      totalnoofshares:['',Validators.required],
-      stockexchange:['',Validators.required]
+      totalnoofshares:['',Validators.required]
+      
     });
 
   }

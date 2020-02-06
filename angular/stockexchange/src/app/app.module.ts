@@ -14,6 +14,13 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 import { IpoComponent } from './ipo/ipo.component';
 import { StockpriceComponent } from './stockprice/stockprice.component';
 import { ImportdataComponent } from './importdata/importdata.component';
+import { AddipoComponent } from './addipo/addipo.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { UpdateIpoComponent } from './update-ipo/update-ipo.component';
+import { AdminlandingComponent } from './adminlanding/adminlanding.component';
+import { ManageCompaniesComponent } from './manage-companies/manage-companies.component';
+import { CompareSectorComponent } from './compare-sector/compare-sector.component';
+import { UserLandingComponent } from './user-landing/user-landing.component';
 
 
 @NgModule({
@@ -27,7 +34,14 @@ import { ImportdataComponent } from './importdata/importdata.component';
     UpdateUserComponent,
     IpoComponent,
     StockpriceComponent,
-    ImportdataComponent
+    ImportdataComponent,
+    AddipoComponent,
+    CompaniesComponent,
+    UpdateIpoComponent,
+    AdminlandingComponent,
+    ManageCompaniesComponent,
+    CompareSectorComponent,
+    UserLandingComponent
   ],
   imports: [
     BrowserModule,
