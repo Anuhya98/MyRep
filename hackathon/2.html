@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>View Cart Page</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+            
+    </script>
+    <br>
+    <br>
+    <h3 style="font-style: italic;text-align: center;">View Order Page</h3>
+    <br>
+    <br>
+    <div class="container">
+        <div class="table-reponsive">
+            <table class="table table-bordered" id="table">
+                <thead>
+                    <tr>
+                        <th id="sno">S.No</th>
+                        <th id="buyersname">Buyers'Name</th>
+                        <th id="shippingaddress">Shipping Address</th>
+                        <th id="city">City</th>
+                        <th id="amount">Amount</th>
+                        <th id="phone">Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="t-body">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<script>
+
+let tablearray = JSON.parse(localStorage.getItem("giftRecords")) || [];
+
+            for (i = 0; i < tablearray.length; i++) {
+                let tr = document.createElement("tr")
+                let td1 = document.createElement("td")
+                let td2 = document.createElement("td")
+                let td3 = document.createElement("td")
+                let td4 = document.createElement("td")
+                let td5 = document.createElement("td")
+                let td6 = document.createElement("td")
+
+                td1.innerHTML = i+1;
+                td2.innerHTML = tablearray[i].buyersName;
+                td3.innerHTML = tablearray[i].shippingAddress;
+                td4.innerHTML = tablearray[i].city;
+                td5.innerHTML = tablearray[i].amount;
+                td6.innerHTML = tablearray[i].phoneNumber;
+
+                let tbody = document.getElementById("t-body")
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+                tr.appendChild(td4)
+                tr.appendChild(td5)
+                tr.appendChild(td6)
+                tbody.appendChild(tr)
+            }
+
+</script>
+</body>
+
+</html>
